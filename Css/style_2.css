@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b2b2b;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s; /* Перевертання триває 1 секунду */
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card.flip .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-front img,
+.card-back img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}

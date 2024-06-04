@@ -1,0 +1,234 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b9dddd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1920px;
+    height: 780px;
+    
+}
+
+.block {
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+   
+}
+.block1 {
+    flex-grow: 3; 
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    margin-top: 0; /* Додано */
+}
+
+.block2 {
+    flex-grow: 5;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0; /* Додано */
+}
+
+.sub-block {
+    flex: 2;
+    margin: 0 5px;
+    
+    border-radius: 10px;
+    /* display: flex; замінено на */
+    display: block;
+    text-align: left;
+    align-items: flex-start; /* Видалено justify-content: center; */
+}
+.color{
+    background-color: #9df1e2;
+}
+.sub-block p{
+    color: #000;
+    font-weight: bold;
+}
+
+
+.remove-product:hover {
+    filter: invert(46%) sepia(93%) saturate(6135%) hue-rotate(348deg) brightness(93%) contrast(102%);
+}
+
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.product img {
+    width:150px ;
+    height: 200px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Вирівнюємо кнопки вправо */
+}
+
+.decrease, .increase {
+    padding: 5px 10px;
+    margin: 10px 5px 0px 5px;
+    font-size: 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+
+}
+
+.quantity {
+    margin: 10px 10px 0px 10px;
+    font-size: 10px;
+    color: black;
+}
+.product-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Додано для проміжку між товарами */
+}
+
+.product-details {
+    flex: 1; /* Розтягуємо блок для заповнення вільного місця */
+    margin-left: 10px; /* Додано відступ між зображенням та текстом */
+}
+img[src='./Img/bin.png'] {
+    width: 20px;
+     height: 20px;
+      margin-top:10px ;
+       margin-left:10px ;
+    cursor: pointer;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Розрив між кнопками */
+}
+
+.image-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.image-button img {
+    width: 50px;
+    height: 50px;
+}
+.image-button.active {
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+}
+
+.form-container {
+
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.form-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add this line to create space between inputs */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 13px;
+    margin-right:-10px;
+}
+.form-container .input-group input {
+    width: calc(50% - 10px);
+}
+.summary-container {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.summary-container p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    margin-left: -20px;
+}
+
+.summary-container .checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    
+}
+.checkout-container{
+    color: #000;
+}
+.summary-container .checkout-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+}

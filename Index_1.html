@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./Css/style_1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block block1">
+            <div class="product-list">
+    
+                <div class="product" data-id="1">
+                    <img src="./Img/OnePlus 7T Pro.jpg" alt="OnePlus 7T Pro">
+                    <h3>OnePlus 7T Pro</h3>
+                    <p>Price: $799.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2">
+                    <img src="./Img/Google Pixel 4 XL.jpg" alt="Google Pixel 4 XL">
+                    <h3>Google Pixel 4 XL</h3>
+                    <p>Price: $899.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="3">
+                    <img src="./Img/Samsung Galaxy Note 10.jpg" alt="Samsung Galaxy Note 10">
+                    <h3>Samsung Galaxy Note 10</h3>
+                    <p>Price: $1000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="4">
+                    <img src="./Img/iPhone 11 Pro.jpg" alt="iPhone 11 Pro">
+                    <h3>iPhone 11 Pro</h3>
+                    <p>Price: $1100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="block block2">
+            <div class="sub-block">
+                <p>Shopping Cart</p>
+            </div>
+            <div class="sub-block color">
+                <p>Cart Details</p>
+                <div class="buttons-container">
+                    <button class="image-button"><img src="./Img/mastercard-svgrepo-com.svg" alt="Icon 1"></button>
+                    <button class="image-button"><img src="./Img/visa-svgrepo-com.svg" alt="Icon 2"></button>
+                    <button class="image-button"><img src="./Img/american-express-svgrepo-com.svg" alt="Icon 3"></button>
+                    <button class="image-button"><img src="./Img/paypal-logo-svgrepo-com.svg" alt="Icon 4"></button>
+                </div>
+                <div class="form-container">
+                    <label for="name-on-card">Name on Card</label>
+                    <input type="text" id="name-on-card" placeholder="Steve Smith" />
+
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="1111 2222 3333 4444" />
+
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="expiration-date">Expiration Date</label>
+                            <input type="text" id="expiration-date" placeholder="10/2021" />
+                        </div>
+                        <div class="input-field">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" />
+                        </div>
+                    </div>
+                    <div class="summary-container">
+                        <p>
+                            <span>Subtotal</span>
+                            <span>$00.00</span>
+                        </p>
+                        <p>
+                            <span>Shipping</span>
+                            <span>$00.00</span>
+                        </p>
+                        <p>
+                            <span>Total (tax incl.)</span>
+                            <span>$00.00</span>
+                        </p>
+                        <div class="checkout-container">
+                            <span>$00.00</span>
+                            <button>Checkout</button>
+                        </div>
+                    </div>
+    
+        </div>
+    </div>
+    <script src="./Java/tesk1.js"></script> 
+</body>
+</html>
